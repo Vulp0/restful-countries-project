@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input type='checkbox' id='switch-theme'></input>
+      <main id='Page'>
+        <nav id='TopBar'>
+          <h1>What in the world?</h1>
+          <label id='switch-theme-label' htmlFor='switch-theme'>Change theme</label>
+        </nav>
+
+        <search id='SearchControls'>
+          <input type='text' id='Search' placeholder='Search for a country...'></input>
+          <select id='Filter' placeholder="Number two">
+            <option value={""} selected>Filter by Region</option>
+            <option value={"Africa"}>Africa</option>
+            <option value={"America"}>America</option>
+            <option value={"Asia"}>Asia</option>
+            <option value={"Europe"}>Europe</option>
+            <option value={"Oceania"}>Oceania</option>
+          </select>
+        </search>
+
+        <section id="Results">
+          
+        </section>
+      </main>
     </div>
   );
 }

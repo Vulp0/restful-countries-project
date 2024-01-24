@@ -1,38 +1,84 @@
+:root {
+  --dark-bg-color: #202D36;
+  --dark-accent-color: #2B3743;
+  --dark-text-color: #FFFFFF;
+
+  --light-bg-color: #FAFAFA;
+  --light-accent-color: #FFFFFF;
+  --light-text-color: #0F1012;
+
+  --background-color: var(--dark-bg-color);
+  --accent-color: var(--dark-accent-color);
+  --text-color: var(--dark-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#switch-theme {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#Page {
+  background-color: var(--background-color);
+  color: var(--text-color);
   min-height: 100vh;
+}
+
+#TopBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--accent-color);
+  padding: 16px 0;
+  margin-bottom: 24px;
+}
+
+#TopBar h1 {
+  font-size: 1.3rem;
+}
+
+#switch-theme-label:hover {
+  cursor: pointer;
+}
+
+#SearchControls {
+  margin: 0 auto;
+  width: 88%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#Search {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+#Filter {
+  width: fit-content;
+  border: none;
+  border-radius: 8px;
+}
+
+#Search, #Filter {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 16px 32px; /* filter looks bigger than search but only on desktop for whatever reason */
+}
+
+
+@media (min-width: 768px) {
+  #SearchControls {
+    flex-direction: row;
   }
 }
