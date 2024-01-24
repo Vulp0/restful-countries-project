@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+#switch-theme:checked ~ #Page {
+  --background-color: var(--light-bg-color);
+  --accent-color: var(--light-accent-color);
+  --text-color: var(--light-text-color);
+}
+
 .App {
   text-align: center;
 }
@@ -80,5 +86,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   #SearchControls {
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #Search {
+    margin: 0;
+    width: 40%;
+    max-width: 40rem;
   }
 }
