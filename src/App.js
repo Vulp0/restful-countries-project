@@ -23,7 +23,13 @@ function App() {
         </search>
 
         <section id="Results">
-          
+          <div class="Card">
+                  <img class="CardIcon" src="us.png" alt='us'></img>
+                  <h3 class="CardTitle">Murica</h3>
+                  <p class="CardSubtitle">Pop: 3 kjjhillion ppl</p>
+                  <p class="CardSubtitle">Region: placeholder</p>
+                  <p class="CardSubtitle">Capital: this is gone</p>
+            </div>
         </section>
       </main>
     </div>
