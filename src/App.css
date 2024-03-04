@@ -12,6 +12,11 @@
   --text-color: var(--dark-text-color);
 }
 
+body {
+  background-color: var(--background-color);
+  font-family: "Nunito Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -37,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100vh;
 }
 
-#TopBar {
+#Topbar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,8 +52,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 24px;
 }
 
-#TopBar h1 {
-  font-size: 1.3rem;
+#Topbar h1 {
+  font-size: 1.4rem;
+}
+
+#switch-theme-label {
+  display: flex;
+  align-items: center;
+}
+
+#switch-theme-label span {
+  margin-right: 4px;
 }
 
 #switch-theme-label:hover {
@@ -61,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 16px;
 }
 
 #Search {
@@ -82,12 +97,102 @@ h1, h2, h3, h4, h5, h6 {
   padding: 16px 32px; /* filter looks bigger than search but only on desktop for whatever reason */
 }
 
-#SearchControls {
+#Results {
+  display: flex;
+  flex-direction: column;
+}
+
+.Card {
+  width: 16rem;
+  background-color: var(--accent-color);
+  text-align: start;
+  margin: 0px auto 24px auto;
+}
+
+.Card:hover {
+  cursor: pointer;
+}
+
+.Card span {
+  font-weight: bold;
+}
+
+.CardIcon {
+  width: 100%;
   margin-bottom: 16px;
 }
 
+.TextContainer {
+  padding: 0 24px;
+}
 
-@media (min-width: 768px) {
+.CardTitle {
+  font-weight: bold;
+}
+
+.CardSubtitle {
+  font-size: 16px;
+}
+
+.ModalContainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ModalWindow {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 80%;
+  text-align: start;
+  margin: 0 auto;
+  padding: 8px 16px 32px 16px;
+}
+
+.ModalWindow button {
+  margin-bottom: 32px;
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--text-color);
+  padding: 8px 20px;
+}
+
+.ModalWindow img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.ModalWindow span {
+  font-weight: bold;
+}
+
+.ModalWindow h2 {
+  margin-bottom: 16px;
+}
+
+.ModalBlockOne, .ModalBlockTwo {
+  margin-bottom: 32px;
+}
+
+.ModalBlockThree span {
+  font-size: large;
+}
+
+
+
+
+
+
+/* screen minimum width must be this for these styles to apply */
+@media (min-width: 576px) {
   #SearchControls {
     flex-direction: row;
     justify-content: space-between;
@@ -98,28 +203,30 @@ h1, h2, h3, h4, h5, h6 {
     width: 40%;
     max-width: 40rem;
   }
+
+  #Results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.Card {
-  width: fit-content;
-  max-width: 20rem;
-  background-color: var(--accent-color);
+@media (min-width: 768px) {
+  .ModalBlockContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
-.CardIcon {
-  max-width: 3rem;
+@media (min-width: 992px) {
+  #Results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.Card img {
-  width: 64px;
-}
-
-.Card h3 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.Card p {
-  font-size: 18px;
-  margin-bottom: 8px;
+@media (min-width: 1200px) {
+  #Results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
