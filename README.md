@@ -34,8 +34,6 @@ Users should be able to:
 
 ![](./sc.PNG)
 
-(./sc.png)
-
 ### Links
 
 - Solution URL: [https://vulp0.github.io/restful-countries-project/](https://vulp0.github.io/restful-countries-project/)
