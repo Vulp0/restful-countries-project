@@ -1,6 +1,6 @@
-function Topbar({ innerRef }) {
+function Topbar() {
     return (
-        <nav id="Topbar" ref={innerRef}>
+        <nav id="Topbar">
           <h1>Where in the world?</h1>
           <label id='switch-theme-label' htmlFor='switch-theme'><span className="material-symbols-outlined">contrast</span>Change theme</label>
         </nav>
