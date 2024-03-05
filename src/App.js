@@ -74,7 +74,11 @@ function App() {
                 population={numberWithCommas(e.population)}
                 region={e.region}
                 capital={e.capital ? e.capital.join(', ') : "None"}
-                nativeName={ e.name.nativeName ? Object.values(e.name.nativeName)[ (Object.keys(e.name.nativeName).length) - 1 ].common : "None" } //LOOKS LIKE I HAD A STROKE, BUT IT WORKS
+                nativeName={ 
+                  e.name.nativeName ? 
+                  Object.values(e.name.nativeName)[ (Object.keys(e.name.nativeName).length) - 1 ].common 
+                  : "None" 
+                } //LOOKS LIKE I HAD A STROKE, BUT IT WORKS
                 subRegion={e.subregion ? e.subregion : "None"}
                 tld={e.tld ? Object.values(e.tld).join(', ') : e.tld}
                 currencies={ e.currencies ? Object.values(e.currencies)[0].name : "None" }
