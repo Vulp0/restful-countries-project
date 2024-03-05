@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/restful-countries-project/static/css/main.591b9bc1.css",
-    "main.js": "/restful-countries-project/static/js/main.cac026ed.js",
+    "main.css": "/restful-countries-project/static/css/main.0a9054c5.css",
+    "main.js": "/restful-countries-project/static/js/main.a0d30b14.js",
     "static/js/787.91294ab4.chunk.js": "/restful-countries-project/static/js/787.91294ab4.chunk.js",
     "index.html": "/restful-countries-project/index.html",
-    "main.591b9bc1.css.map": "/restful-countries-project/static/css/main.591b9bc1.css.map",
-    "main.cac026ed.js.map": "/restful-countries-project/static/js/main.cac026ed.js.map",
+    "main.0a9054c5.css.map": "/restful-countries-project/static/css/main.0a9054c5.css.map",
+    "main.a0d30b14.js.map": "/restful-countries-project/static/js/main.a0d30b14.js.map",
     "787.91294ab4.chunk.js.map": "/restful-countries-project/static/js/787.91294ab4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.591b9bc1.css",
-    "static/js/main.cac026ed.js"
+    "static/css/main.0a9054c5.css",
+    "static/js/main.a0d30b14.js"
   ]
 }
