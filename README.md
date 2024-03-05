@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./sc.png)
 
 ![Desktop site preview](./sc.png)
 
