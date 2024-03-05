@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://vulp0.github.io/restful-countries-project/](https://vulp0.github.io/restful-countries-project/)
+- Solution URL: [https://github.com/Vulp0/restful-countries-project](https://github.com/Vulp0/restful-countries-project)
 - Live Site URL: [https://vulp0.github.io/restful-countries-project/](https://vulp0.github.io/restful-countries-project/)
 
 ## My process
