@@ -34,7 +34,7 @@ Users should be able to:
 
 ![](./sc.PNG)
 
-![Desktop site preview](./sc.png)
+(./sc.png)
 
 ### Links
 
