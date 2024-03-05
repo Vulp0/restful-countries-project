@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--accent-color);
   text-align: start;
   margin: 0px auto 24px auto;
-  transition: 0.3s;
+  transition: 0.3s scale;
   -webkit-box-shadow: 8px 8px 16px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 8px 8px 16px -4px rgba(0,0,0,0.75);
   box-shadow: 8px 8px 16px -4px rgba(0,0,0,0.75);
@@ -190,21 +190,6 @@ h1, h2, h3, h4, h5, h6 {
 .ModalBlockThree span {
   font-size: large;
 }
-
-.ScrollButtonContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2rem;
-  height: 2rem;
-  /* background-color: var(--accent-color); */
-  background-color: red;
-}
-
-.ScrollButtonContainer:hover {
-  cursor: pointer;
-}
-
 
 
 
